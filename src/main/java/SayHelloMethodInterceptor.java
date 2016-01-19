@@ -6,6 +6,7 @@ import org.aopalliance.intercept.MethodInvocation;
  * lalazaro@keedio.com
  * Keedio
  */
+//Intercepts calls on an interface on its way to the target.
 public class SayHelloMethodInterceptor implements MethodInterceptor {
    public Object invoke(MethodInvocation invocation) throws Throwable {
       System.out.println("hola");
